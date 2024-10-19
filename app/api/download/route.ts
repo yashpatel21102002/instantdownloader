@@ -64,6 +64,7 @@ export async function POST(req: Request) {
                     } else {
                         try {
                             resolve(JSON.parse(body));
+                            // eslint-disable-next-line @typescript-eslint/no-unused-vars
                         } catch (e) {
                             reject(new Error(`Failed to parse API response: ${body}`));
                         }
