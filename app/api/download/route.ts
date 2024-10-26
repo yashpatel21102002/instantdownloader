@@ -39,7 +39,7 @@ export async function POST(req: Request) {
             hostname: 'instagram-scraper-api3.p.rapidapi.com',
             path: `/media_info?code_or_id_or_url=${encodeURIComponent(code_or_id_or_url)}`,
             headers: {
-                'X-RapidAPI-Key': 'c11dd82643mshcef0620bd20a9f3p1f4cb0jsnce849b9cf614',
+                'X-RapidAPI-Key': '166b67fd09msh08a065a863e0602p19ae48jsnf26ba539d884',
                 'X-RapidAPI-Host': 'instagram-scraper-api3.p.rapidapi.com'
             }
         };
