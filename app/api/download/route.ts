@@ -36,11 +36,11 @@ export async function POST(req: Request) {
 
         const options: https.RequestOptions = {
             method: 'GET',
-            hostname: 'instagram-scraper-api3.p.rapidapi.com',
+            hostname: process.env.RAPID_ENDPOINT,
             path: `/media_info?code_or_id_or_url=${encodeURIComponent(code_or_id_or_url)}`,
             headers: {
-                'X-RapidAPI-Key': '166b67fd09msh08a065a863e0602p19ae48jsnf26ba539d884',
-                'X-RapidAPI-Host': 'instagram-scraper-api3.p.rapidapi.com'
+                'X-RapidAPI-Key': process.env.RAPID_API,
+                'X-RapidAPI-Host': process.env.RAPID_ENDPOINT
             }
         };
 
