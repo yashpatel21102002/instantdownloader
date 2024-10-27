@@ -45,12 +45,12 @@ const ReelDownloader: React.FC = () => {
       setShowModal(true); // Show modal with the video
 
       toast.success("Download successful!", {
-        position: "bottom-center",
-        autoClose: 3000,
+        position: "top-right",
+        autoClose: 1000,
       });
     } catch {
       toast.error("Failed to download. Please try again.", {
-        position: "bottom-center",
+        position: "top-right",
         autoClose: 5000,
       });
     } finally {
@@ -180,7 +180,7 @@ const ReelDownloader: React.FC = () => {
       </div>
 
       <ToastContainer
-        position="bottom-center"
+        position="top-right"
         theme={theme === "dark" ? "dark" : "light"}
       />
 
